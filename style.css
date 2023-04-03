@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html, body{
+  height: 100%;
+}
+
+img, picture, video, svg, canvas{
+  display: block;
+  max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6{
+  overflow-wrap: break-word;
+}
+
+body{
+  background-color: var(--blue-100);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+p{
+  font-size: 1rem;
+}
+a{
+  text-decoration-line: none;
+}
+
+/* utilities */
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-between{
+  justify-content: space-between;
+}
+.flex-align{
+  align-items: center;
+}
+.gap{
+  gap: var(--gap);
+}
+.grid{
+  display: grid;
+}
+.dot{
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: var(--red);
+}
+.unread{
+  border-radius: 0.4rem;
+  background-color: var(--blue-100);
+}
+.card{
+  padding: 0.85rem;
+  border-radius: 0.3rem;
+  margin-block-start: 0.5rem;
+  border: 1.5px solid var(--blue-300);
+}
+/* end */
+
+.wrapper{
+  margin: auto;
+  height: 100vh;
+  padding: 0.65rem;
+  max-width: 550px;
+  border-radius: 0.5rem;
+  background-color: var(--white);
+}
+
+.head{
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: var(--blue-900);
+}
+.head span{
+  font-size: 1.25rem;
+  color: var(--white);
+  border-radius: 0.4rem;
+  padding: 0.15rem 0.6rem;
+  background-color: var(--blue);
+}
+.btn{
+  border: none;
+  outline: none;
+  font-weight: 500;
+  font-size: 1.15rem;
+  height: fit-content;
+  color: var(--blue-600);
+  background-color: transparent;
+}
+.btn:hover{
+  color: var(--blue-900);
+}
+
+.content{
+  --gap: 0.5rem;
+  height: auto;
+  gap: var(--gap);
+  margin-block: 1.5rem;
+}
+.notification{
+  --gap: 0.85rem;
+  gap: var(--gap);
+  padding: 0.85rem;
+  color: var(--blue-600);
+  grid-auto-flow: column;
+  grid-template-columns: auto 1fr;
+}
+[alt=avatar]{
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+.name{
+  font-weight: 800;
+  color: var(--blue-900);
+}
+.name:hover{
+  color: var(--blue);
+}
+.post{
+  font-weight: 500;
+  color: var(--blue-600);
+}
+.post:hover{
+  color: var(--blue);
+}
+.group{
+  font-weight: 500;
+  color: var(--blue);
+}
+.message{
+  color: var(--blue-600);
+  display: inline-block;
+}
+.message:hover{
+  background-color: var(--blue-200);
+}
+.time{
+  color: var(--blue-400);
+}
+[alt=chess]{
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.35rem;
+}
+[alt=chess]:hover{
+  border: 1px solid var(--blue-300);
+}
+
+:root{
+  --red: hsl(1, 90%, 64%); 
+  --white: hsl(0, 0%, 100%);
+  --blue: hsl(219, 85%, 26%);
+  --blue-100: hsl(210, 60%, 98%);
+  --blue-200: hsl(211, 68%, 94%);
+  --blue-300: hsl(205, 33%, 90%);
+  --blue-400: hsl(219, 14%, 63%);
+  --blue-600: hsl(219, 12%, 42%);
+  --blue-900: hsl(224, 21%, 14%);
+}
